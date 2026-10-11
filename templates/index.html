@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy 2.0 | Your Fitness Journey</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="/" class="logo">✦ FitBuddy<span> 2.0</span></a>
+
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#planner" class="nav-button">Get Started ↗</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span class="status-dot"></span>
+                YOUR PERSONAL FITNESS COMPANION
+            </div>
+
+            <h1>
+                Your journey.<br>
+                Your <span class="gradient-text">stronger</span><br>
+                tomorrow.
+            </h1>
+
+            <p class="hero-description">
+                Discover a fitness routine that fits your life.
+                Get personalised guidance for movement, nutrition
+                and building healthy habits.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#planner" class="primary-button">
+                    Create My Plan <span>↗</span>
+                </a>
+
+                <a href="#features" class="secondary-button">
+                    Explore Features ↓
+                </a>
+            </div>
+
+            <div class="hero-note">
+                <span>✦</span> Made for your goals
+                <span class="note-divider"></span>
+                <span>✓</span> Beginner-friendly guidance
+            </div>
+
+        </div>
+
+        <!-- FLOATING FITNESS CARD -->
+
+        <div class="hero-visual">
+
+            <div class="floating-shape shape-one"></div>
+            <div class="floating-shape shape-two"></div>
+
+            <div class="mini-badge badge-top">
+                ✨ Small steps matter
+            </div>
+
+            <div class="visual-card">
+
+                <div class="visual-top">
+                    <span class="visual-label">YOUR DAILY REMINDER</span>
+                    <span class="visual-star">✦</span>
+                </div>
+
+                <div class="visual-art">
+                    <div class="art-circle circle-back"></div>
+                    <div class="art-circle circle-front"></div>
+
+                    <div class="art-symbol">✳</div>
+                </div>
+
+                <p class="visual-quote">
+                    Progress is built<br>
+                    <span>one day at a time.</span>
+                </p>
+
+                <div class="visual-divider"></div>
+
+                <div class="visual-bottom">
+                    <div>
+                        <strong>01</strong>
+                        <span>START</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>GROW</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>THRIVE</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mini-badge badge-bottom">
+                💜 Your pace, your journey
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features" id="features">
+
+        <div class="section-heading">
+            <p class="eyebrow">A BETTER WAY TO BEGIN</p>
+
+            <h2>
+                Fitness that fits <span class="gradient-text">you.</span>
+            </h2>
+
+            <p>
+                A personalised starting point for your everyday wellness journey.
+            </p>
+        </div>
+
+        <div class="feature-grid">
+
+            <article class="feature feature-purple">
+                <div class="feature-top">
+                    <span class="feature-icon">◎</span>
+                    <span class="feature-number">01</span>
+                </div>
+
+                <h3>Goal-Based Plans</h3>
+
+                <p>
+                    Choose your fitness goals and receive guidance
+                    suited to your needs.
+                </p>
+
+                <span class="feature-arrow">↗</span>
+            </article>
+
+            <article class="feature feature-pink">
+                <div class="feature-top">
+                    <span class="feature-icon">✳</span>
+                    <span class="feature-number">02</span>
+                </div>
+
+                <h3>Personalised Routine</h3>
+
+                <p>
+                    Find a starting routine that considers your
+                    experience and preferences.
+                </p>
+
+                <span class="feature-arrow">↗</span>
+            </article>
+
+            <article class="feature feature-blue">
+                <div class="feature-top">
+                    <span class="feature-icon">↗</span>
+                    <span class="feature-number">03</span>
+                </div>
+
+                <h3>Healthy Habits</h3>
+
+                <p>
+                    Build consistency through practical movement,
+                    nutrition and recovery guidance.
+                </p>
+
+                <span class="feature-arrow">↗</span>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- FITNESS PLANNER -->
+
+    <section class="planner" id="planner">
+
+        <div class="planner-decoration decoration-one"></div>
+        <div class="planner-decoration decoration-two"></div>
+
+        <div class="planner-inner">
+
+            <div class="section-heading planner-heading">
+                <p class="eyebrow">✦ YOUR NEXT CHAPTER STARTS HERE</p>
+
+                <h2>
+                    Let's build your<br>
+                    <span class="gradient-text">fitness plan.</span>
+                </h2>
+
+                <p>
+                    Share a few details to get started with
+                    your personalised fitness guidance.
+                </p>
+            </div>
+
+            <form action="/generate" method="post" class="planner-form">
+
+                <div class="form-header">
+                    <div>
+                        <span class="form-step">YOUR PROFILE</span>
+                        <h3>Tell us about yourself</h3>
+                    </div>
+
+                    <div class="form-icon">✦</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="13"
+                            max="100"
+                            placeholder="Your age"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Other">Other</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="goal">Fitness goal</label>
+
+                    <select id="goal" name="goal" required>
+                        <option value="">Choose your goal</option>
+                        <option value="General Fitness">General Fitness</option>
+                        <option value="Weight Management">Weight Management</option>
+                        <option value="Muscle Strength">Muscle Strength</option>
+                        <option value="Flexibility">Flexibility</option>
+                        <option value="Endurance">Endurance</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="level">Experience level</label>
+
+                    <select id="level" name="level" required>
+                        <option value="">Select your level</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="diet">Food preference</label>
+
+                    <select id="diet" name="diet" required>
+                        <option value="">Choose your preference</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Non-Vegetarian">Non-Vegetarian</option>
+                        <option value="Vegan">Vegan</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Generate My Fitness Plan <span>→</span>
+                </button>
+
+                <p class="form-note">
+                    ✦ Your journey starts with one small step.
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <a href="/" class="logo">✦ FitBuddy<span> 2.0</span></a>
+
+    <p>Move with purpose. Grow with confidence.</p>
+
+    <a href="#top" class="back-top">Back to top ↑</a>
+
+</footer>
+
+</body>
+</html>
